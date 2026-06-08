@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company – SSP PLY & DECORS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="company.css">
+</head>
+<body>
+
+  <!-- ─── HEADER ─── -->
+<header id="header">
+    <div class="container">
+        <div class="header-inner">
+
+            <a href="index.html" class="logo">
+                <img src="images/ssp-logo.jpg" alt="SSP Ply & Decors" class="logo-img">
+                <div class="logo-text">
+                    SSP PLY & DECORS
+                    <span>Est. 2025</span>
+                </div>
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="company.html">Company</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+<button class="hamburger" id="hamburger">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        </div>
+    </div>
+</header>
+
+<!-- ===================== SLIDE NAV DOTS ===================== -->
+<nav class="slide-nav" id="slideNav">
+    <button class="dot active" onclick="goTo(0)" title="About"></button>
+    <button class="dot" onclick="goTo(1)" title="Why Choose Us"></button>
+    <button class="dot" onclick="goTo(2)" title="How We Work"></button>
+    <button class="dot" onclick="goTo(3)" title="Get a Quote"></button>
+</nav>
+
+<!-- ===================== SLIDE ARROWS ===================== -->
+<button class="arrow arrow-up" id="arrowUp" onclick="prevSlide()">&#8593;</button>
+<button class="arrow arrow-down" id="arrowDown" onclick="nextSlide()">&#8595;</button>
+
+<!-- ===================== SLIDES WRAPPER ===================== -->
+<div class="slides-wrapper" id="slidesWrapper">
+
+    <!-- ===== SLIDE 1: ABOUT ===== -->
+    <section class="slide" id="slide-0">
+        <div class="about-grid">
+            <!-- Left -->
+            <div class="about-left">
+                <span class="pill">&#9679; About SSP PLY & DECORS</span>
+                <h1>Your Reliable Partner in <em>Decorative Solutions</em></h1>
+                <p>Established in 2026, <strong>SSP PLY & DECORS</strong> is a trusted Wholesaler, Distributor, and Service Provider of premium interior and decorative materials. We are known for our consistent quality and reliable solutions tailored to diverse interior needs.</p>
+                <p>Driven by a dedicated and experienced team, we focus on meeting customer requirements with precision and care. Our commitment to excellence has earned us strong industry recognition and long-term trust from our clients.</p>
+                <div class="about-btns">
+                    <a href="contact.html" class="btn-primary">Reach Us</a>
+                    <a href="products.html" class="btn-secondary">View Catalog</a>
+                </div>
+                <div class="stats-row">
+                    <div class="stat"><span class="stat-num">25+</span><span class="stat-label">Years Experience</span></div>
+                    <div class="stat"><span class="stat-num">5000+</span><span class="stat-label">Products</span></div>
+                    <div class="stat"><span class="stat-num">10K+</span><span class="stat-label">Happy Clients</span></div>
+                </div>
+            </div>
+            <!-- Right -->
+            <div class="founder-wrapper">
+    <img src="images/founder.jpg" alt="Mr. E Balu" class="founder-img">
+
+    <div class="founder-card">
+        <span class="founder-name">Mr. E Balu</span>
+        <span class="founder-role">Founder</span>
+    </div>
+</div>
+
+    </section>
+
+    <!-- ===== SLIDE 2: WHY CHOOSE US ===== -->
+    <section class="slide" id="slide-1">
+        <div class="section-inner">
+            <div class="section-head">
+                <h2>Why Choose SSP PLY & DECORS</h2>
+                <p>Experience the difference with our innovative approach and premium quality products</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-images">
+                    <<div class="why-img-col">
+    <img src="images/about/showroom.jpg" alt="Showroom">
+    <img src="images/about/wood-display.jpg" alt="Wood Display">
+</div>
+                </div>
+                <div class="why-features">
+                    <div class="feature">
+                        <div class="feature-icon">&#10022;</div>
+                        <div>
+                            <h4>Personalized Experience</h4>
+                            <p>Choose your project type — Residential, Commercial, or Modular Kitchen — and view tailored product selections designed specifically for your needs.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">&#9742;</div>
+                        <div>
+                            <h4>Multiple Contact Options</h4>
+                            <p>Connect with us through direct call, WhatsApp, or email forms. Book video call appointments to view products from the comfort of your space.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">&#9670;</div>
+                        <div>
+                            <h4>Role-Based Pricing</h4>
+                            <p>Whether you are a contractor, architect, or homeowner — get pricing tailored to your role and project scale for maximum value.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SLIDE 3: HOW WE WORK ===== -->
+    <section class="slide" id="slide-2">
+        <div class="section-inner">
+            <div class="section-head">
+                <h2>How We Work</h2>
+                <p>A simple and transparent process designed to make material selection easy and reliable. We guide you through every step from understanding your needs to providing seamless support.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-top">
+                        <span class="step-num">01</span>
+                        <span class="step-icon">&#9989;</span>
+                    </div>
+                    <div class="step-bar"></div>
+                    <h4>Understand Your Requirement</h4>
+                    <p>We identify your project type — Residential, Commercial, or Modular Kitchen — and understand your material needs.</p>
+                    <ul>
+                        <li>Project type selection</li>
+                        <li>Material requirement analysis</li>
+                        <li>Budget &amp; timeline discussion</li>
+                    </ul>
+                </div>
+                <div class="step-card">
+                    <div class="step-top">
+                        <span class="step-num">02</span>
+                        <span class="step-icon">&#128161;</span>
+                    </div>
+                    <div class="step-bar"></div>
+                    <h4>Recommend the Right Materials</h4>
+                    <p>Our team suggests suitable plywood, mica, veneers, doors, or panels based on durability, usage, and budget.</p>
+                    <ul>
+                        <li>Quality assessment</li>
+                        <li>Durability analysis</li>
+                        <li>Budget-friendly options</li>
+                    </ul>
+                </div>
+                <div class="step-card">
+                    <div class="step-top">
+                        <span class="step-num">03</span>
+                        <span class="step-icon">&#128172;</span>
+                    </div>
+                    <div class="step-bar"></div>
+                    <h4>Easy Enquiry &amp; Consultation</h4>
+                    <p>Connect with us via call, WhatsApp, email, or book a video call to discuss products in detail.</p>
+                    <ul>
+                        <li>Direct call support</li>
+                        <li>WhatsApp assistance</li>
+                        <li>Video call appointments</li>
+                    </ul>
+                </div>
+                <div class="step-card">
+                    <div class="step-top">
+                        <span class="step-num">04</span>
+                        <span class="step-icon">&#9989;</span>
+                    </div>
+                    <div class="step-bar"></div>
+                    <h4>Smooth Order &amp; Support</h4>
+                    <p>We assist throughout enquiry tracking, pricing clarity, and post-enquiry support for a seamless experience.</p>
+                    <ul>
+                        <li>Enquiry tracking</li>
+                        <li>Pricing clarity</li>
+                        <li>Post-enquiry support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SLIDE 4: CTA ===== -->
+    <section class="slide slide-dark" id="slide-3">
+        <div class="cta-inner">
+            <div class="cta-left">
+                <div class="cta-bar"></div>
+                <h2>Ready to transform your <em>next project?</em></h2>
+                <p>Partner with the leaders in premium interior solutions. Our experts are ready to guide you towards excellence and bring your vision to life.</p>
+                <div class="cta-btns">
+                    <a href="contact.html" class="btn-red">Get a quote</a>
+                    <a href="products.html" class="btn-dark">Explore products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div><!-- end slides-wrapper -->
+
+<script src="company.js"></script>
+</body>
+</html>

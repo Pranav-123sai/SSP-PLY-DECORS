@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="products.css">
+</head>
+<div class="image-popup" id="imagePopup">
+    <span class="close-popup">&times;</span>
+    <img id="popupImage" src="">
+</div>
+<body>
+
+<header id="header">
+    <div class="container">
+        <div class="header-inner">
+
+            <a href="index.html" class="logo">
+                <img src="images/ssp-logo.jpg" alt="SSP Ply & Decors" class="logo-img">
+                <div class="logo-text">
+                    SSP PLY & DECORS
+                    <span>Est. 2025</span>
+                </div>
+            </a>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="company.html">Company</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+<button class="hamburger" id="hamburger">
+          <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        </div>
+    </div>
+</header>
+
+<div class="products-page">
+    
+    <!-- Left Sidebar -->
+    <aside class="filters-sidebar">
+        <h3><span class="filter-icon">&#9783;</span> Filters</h3>
+
+        <div class="filter-group">
+            <h4>Categories</h4>
+
+            <!-- Plywood & Boards -->
+            <div class="cat-item" data-cat="plywood" onclick="toggleCat(this)">
+                <span class="cat-label">Plywood &amp; Boards</span>
+                <span class="chevron">&#8964;</span>
+            </div>
+            <div class="subcats">
+                <a href="#" class="subcat-link" data-sub="Commercial MR 303 Grade Plywood ">Commercial MR 303 Grade Plywood </a>
+                <a href="#" class="subcat-link" data-sub="Commercial ISI MR 303 Grade Plywood">Commercial ISI MR 303 Grade Plywood</a>
+                <a href="#" class="subcat-link" data-sub="BWP 710 Grade Plywood">BWP 710 Grade Plywood</a>
+                <a href="#" class="subcat-link" data-sub="HDHMR Boards">HDHMR Boards</a>
+                <a href="#" class="subcat-link" data-sub="Marine">Marine</a>
+                <a href="#" class="subcat-link" data-sub="WPC Board">WPC Board</a>
+                <a href="#" class="subcat-link" data-sub="Prelam MDF">Prelam MDF</a>
+                <a href="#" class="subcat-link" data-sub="NFC Boards">NFC Boards</a>
+                <a href="#" class="subcat-link" data-sub="BWR 303">BWR 303</a>
+                <a href="#" class="subcat-link" data-sub="blockboard">Block Board</a>
+                <a href="#" class="subcat-link" data-sub="mdf">MDF Boards</a>
+                <a href="#" class="subcat-link" data-sub="particle">Particle Board</a>
+            </div>
+
+            <!-- Laminates & Surface Finishes -->
+            <div class="cat-item" data-cat="laminates" onclick="toggleCat(this)">
+                <span class="cat-label">Laminates & Surface Finishes </span>
+                <span class="chevron">&#8964;</span>
+            </div>
+            <div class="subcats">
+                <a href="#" class="subcat-link">High Gloss</a>
+                <a href="#" class="subcat-link">Matte Finish</a>
+                <a href="#" class="subcat-link">Textured</a>
+                <a href="#" class="subcat-link">Metallic</a>
+                <a href="#" class="subcat-link">Wood Grain</a>
+            </div>
+
+            <!-- Doors & Frames -->
+            <div class="cat-item" data-cat="doors" onclick="toggleCat(this)">
+                <span class="cat-label">Doors &amp; Frames</span>
+                <span class="chevron">&#8964;</span>
+            </div>
+            <div class="subcats">
+                <a href="#" class="subcat-link">Flush Doors</a>
+                <a href="#" class="subcat-link">Panel Doors</a>
+                <a href="#" class="subcat-link">WPC Frames</a>
+                <a href="#" class="subcat-link">Wooden Frames</a>
+            </div>
+
+            <!-- Hardware & Fittings -->
+            <div class="cat-item" data-cat="hardware" onclick="toggleCat(this)">
+                <span class="cat-label">Hardware &amp; Fittings</span>
+                <span class="chevron">&#8964;</span>
+            </div>
+            <div class="subcats">
+                <a href="#" class="subcat-link">Hinges</a>
+                <a href="#" class="subcat-link">Channels &amp; Runners</a>
+                <a href="#" class="subcat-link">Handles</a>
+                <a href="#" class="subcat-link">Locks</a>
+                <a href="#" class="subcat-link">Screws &amp; Fasteners</a>
+            </div>
+
+            <!-- Exterior & Cladding -->
+            <div class="cat-item" data-cat="exterior" onclick="toggleCat(this)">
+                <span class="cat-label">Exterior &amp; Cladding Solutions</span>
+                <span class="chevron">&#8964;</span>
+            </div>
+            <div class="subcats">
+                <a href="#" class="subcat-link">WPC Cladding</a>
+                <a href="#" class="subcat-link">Fibre Cement Panels</a>
+                <a href="#" class="subcat-link">ACP Sheets</a>
+            </div>
+
+            <!-- Modular & Interior -->
+            <div class="cat-item" data-cat="modular" onclick="toggleCat(this)">
+                <span class="cat-label">Modular &amp; Interior Solutions</span>
+                <span class="chevron">&#8964;</span>
+            </div>
+            <div class="subcats">
+                <a href="#" class="subcat-link">Modular Kitchen</a>
+                <a href="#" class="subcat-link">Wardrobes</a>
+                <a href="#" class="subcat-link">TV Units</a>
+                <a href="#" class="subcat-link">Study Units</a>
+                <a href="#" class="subcat-link">UPVC Window</a>
+                <a href="#" class="subcat-link">Pooja Unit</a>
+            </div>
+            <!-- Adhesives & Accessories -->
+<div class="cat-item" data-cat="adhesives" onclick="toggleCat(this)">
+    <span class="cat-label">Adhesives &amp; Accessories</span>
+    <span class="chevron">&#8964;</span>
+</div>
+<div class="subcats">
+    <a href="#" class="subcat-link">Fevicol &amp; Adhesives</a>
+    <a href="#" class="subcat-link">Edge Band Tapes</a>
+    <a href="#" class="subcat-link">Silicone &amp; Sealants</a>
+    <a href="#" class="subcat-link">PVC Edge Bands</a>
+    <a href="#" class="subcat-link">Screws &amp; Fasteners</a>
+</div>
+        </div>
+
+
+
+        <!-- Clear All -->
+        <button class="clear-btn" onclick="clearAll()">Clear All Filters</button>
+    </aside>
+
+    <!-- Right Products -->
+    <div class="products-area">
+
+        <!-- Toolbar -->
+        <div class="products-toolbar">
+            <div>
+                <div class="results-count" id="resultsCount">Showing all products</div>
+                <div class="active-filters" id="activeFilters"></div>
+            </div>
+            <div class="toolbar-right">
+                <div class="view-toggles">
+                    <button class="vtog active" id="gridBtn" onclick="setView('grid')" title="Grid view">&#9783;</button>
+                    <button class="vtog" id="listBtn" onclick="setView('list')" title="List view">&#8801;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Grid — filled dynamically by products.js -->
+        <div class="products-grid" id="productsGrid">
+            <div class="loading-msg">Loading products...</div>
+        </div>
+
+    </div>
+</div>
+
+<script src="products.js"></script>
+
+</body>
+</html>
