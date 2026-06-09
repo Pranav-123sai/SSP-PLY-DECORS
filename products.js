@@ -517,32 +517,36 @@ popup.addEventListener("click",(e)=>{
 
 });
 
-// Mobile Menu
+/* ===========================
+   MOBILE MENU
+=========================== */
 
-const hamburger = document.getElementById("hamburger");
-const mobileMenu = document.getElementById("mobileMenu");
+document.addEventListener("DOMContentLoaded", function () {
 
-if(hamburger && mobileMenu){
+    const hamburger = document.getElementById("hamburger");
+    const mobileMenu = document.getElementById("mobileMenu");
 
-    hamburger.onclick = function(e){
+    if (hamburger && mobileMenu) {
 
-        e.stopPropagation();
+        hamburger.addEventListener("click", function () {
 
-        mobileMenu.classList.toggle("active");
+            mobileMenu.classList.toggle("active");
 
-    };
+        });
 
-    document.addEventListener("click", function(){
+        document.addEventListener("click", function (e) {
 
-        mobileMenu.classList.remove("active");
+            if (
+                !mobileMenu.contains(e.target) &&
+                !hamburger.contains(e.target)
+            ) {
+                mobileMenu.classList.remove("active");
+            }
 
-    });
+        });
 
-    mobileMenu.addEventListener("click", function(e){
+    }
 
-        e.stopPropagation();
-
-    });
-
+});
 }
 
