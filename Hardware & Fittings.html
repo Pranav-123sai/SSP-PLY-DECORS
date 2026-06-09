@@ -292,6 +292,59 @@ body{
 .product-card:hover img{
     transform:scale(1.05);
 }
+    /* Hamburger Button */
+.hamburger{
+    background:none;
+    border:none;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* Mobile Menu */
+.mobile-menu{
+    position:fixed;
+    top:80px;
+    right:-100%;
+    width:250px;
+    height:auto;
+    background:#fff;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    border-radius:15px;
+    padding:20px;
+    z-index:9999;
+    transition:.3s ease;
+}
+
+.mobile-menu.active{
+    right:15px;
+}
+
+.mobile-menu a{
+    display:block;
+    padding:15px 10px;
+    text-decoration:none;
+    color:#222;
+    font-size:16px;
+    font-weight:600;
+    border-bottom:1px solid #eee;
+}
+
+.mobile-menu a:last-child{
+    border-bottom:none;
+}
+
+.mobile-menu a:hover{
+    color:#c27a45;
+}
+
+/* Desktop */
+@media(min-width:769px){
+    .mobile-menu{
+        display:none;
+    }
+}
 
 </style>
 </head>
@@ -450,6 +503,22 @@ popup.addEventListener("click",(e)=>{
 
     }
 
+});
+
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+
+hamburger.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+});
+
+document.addEventListener("click", (e) => {
+    if (
+        !mobileMenu.contains(e.target) &&
+        !hamburger.contains(e.target)
+    ) {
+        mobileMenu.classList.remove("active");
+    }
 });
 
 </script>
