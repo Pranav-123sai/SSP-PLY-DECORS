@@ -668,84 +668,74 @@ html, body {
     max-width:1400px;
     margin:110px auto 30px;
 }
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-    #header nav {
-        display: none;
+    #header{
+        height:70px;
+        padding:0;
     }
 
-    .header-icons {
-        display: flex;
-        align-items: center;
+    .container{
+        padding:0 15px;
     }
 
-    .hamburger {
-        display: block;
-        background: none;
-        border: none;
-        cursor: pointer;
+    .header-inner{
+        height:70px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
     }
 
-    .header-inner {
-        justify-content: space-between;
+    .logo{
+        display:flex;
+        align-items:center;
+        gap:10px;
+        text-decoration:none;
+        flex:1;
     }
 
-    .logo-img {
-        width: 45px;
-        height: 45px;
+    .logo-img{
+        width:42px;
+        height:42px;
+        object-fit:cover;
+        border-radius:8px;
+        flex-shrink:0;
     }
 
-    .logo-text {
-        font-size: 14px;
-        line-height: 1.1;
+    .logo-text{
+        display:flex;
+        flex-direction:column;
+        line-height:1.1;
     }
 
-    .logo-text span {
-        font-size: 11px;
+    .logo-text h2{
+        margin:0;
+        font-size:15px;
+        font-weight:700;
+        color:#222;
+        white-space:nowrap;
     }
 
-    .container {
-        padding: 0 15px;
+    .logo-text p{
+        margin:2px 0 0;
+        font-size:10px;
+        color:#666;
+        font-weight:500;
     }
-}
-.image-popup{
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.95);
-    display:none;
-    justify-content:center;
-    align-items:center;
-    z-index:9999;
-}
 
-.image-popup.active{
-    display:flex;
-}
+    nav{
+        display:none;
+    }
 
-.image-popup img{
-    max-width:90%;
-    max-height:90vh;
-    border-radius:15px;
-    box-shadow:0 20px 60px rgba(0,0,0,.5);
-}
-
-.close-popup{
-    position:absolute;
-    top:30px;
-    right:40px;
-    color:white;
-    font-size:45px;
-    cursor:pointer;
-}
-.product-card{
-    cursor:pointer;
-}
-
-.product-card img{
-    transition:.4s;
-}
-
-.product-card:hover img{
-    transform:scale(1.05);
+    .hamburger{
+        width:40px;
+        height:40px;
+        border:none;
+        background:none;
+        font-size:30px;
+        cursor:pointer;
+        color:#222;
+        flex-shrink:0;
+    }
 }
         
