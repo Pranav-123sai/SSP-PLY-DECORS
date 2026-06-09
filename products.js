@@ -521,13 +521,14 @@ popup.addEventListener("click",(e)=>{
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    alert("JS Loaded");
+
     const hamburger = document.getElementById("hamburger");
     const mobileMenu = document.getElementById("mobileMenu");
 
     hamburger.addEventListener("click", function () {
-
+        alert("Hamburger Clicked");
         mobileMenu.classList.toggle("active");
-
     });
 
 });
