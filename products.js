@@ -192,43 +192,31 @@ const allProducts = [
     img: 'images/Drawer Systems.jpg'
   },
   {
-    id: 31, cat: 'hardware', name: 'Wardrobe Accessories',
-    sub: 'Stainless Steel, Pack of 6', price: '₹290', unit: 'Pack',
-    badge: 'New', badgeType: 'new',
-    img: 'images/Wardrobe Accessories.jpg'
-  },
-  {
-    id: 32, cat: 'hardware', name: 'Locks & Digital Lock',
+    id: 31, cat: 'hardware', name: 'Locks & Digital Lock',
     sub: 'Stainless Steel, Pack of 6', price: '₹290', unit: 'Pack',
     badge: 'New', badgeType: 'new',
     img: 'images/Locks & Digital Lock.jpg'
   },
   {
-    id: 33, cat: 'hardware', name: 'Kitchen Hardware',
-    sub: 'Stainless Steel, Pack of 6', price: '₹290', unit: 'Pack',
-    badge: 'New', badgeType: 'new',
-    img: 'images/Kitchen Hardware.jpg'
-  },
-  {
-    id: 34, cat: 'hardware', name: 'Glass Fittings',
+    id: 32, cat: 'hardware', name: 'Glass Fittings',
     sub: 'Stainless Steel, Pack of 6', price: '₹290', unit: 'Pack',
     badge: 'New', badgeType: 'new',
     img: 'images/Glass Fittings.jpg'
   },
   {
-    id: 35, cat: 'hardware', name: 'Wicker baskets',
+    id: 33, cat: 'hardware', name: 'Wicker baskets',
     sub: 'Stainless Steel, Pack of 6', price: '₹290', unit: 'Pack',
     badge: 'New', badgeType: 'new',
     img: 'images/Wicker baskets.jpg'
   },
 {
-    id: 36, cat: 'hardware', name: 'Tall unit',
+    id: 34, cat: 'hardware', name: 'Tall unit',
     sub: 'Stainless Steel, Pack of 6', price: '₹290', unit: 'Pack',
     badge: 'New', badgeType: 'new',
     img: 'images/Tall unit.jpg'
   },
 {
-    id: 37, cat: 'hardware', name: 'Kitchen Rolling Shutter',
+    id: 35, cat: 'hardware', name: 'Kitchen Rolling Shutter',
     sub: 'Stainless Steel, Pack of 6', price: '₹290', unit: 'Pack',
     badge: 'New', badgeType: 'new',
     img: 'images/Kitchen Rolling Shutter.jpg'
@@ -237,13 +225,13 @@ const allProducts = [
 
   // Exterior & Cladding
   {
-    id: 38, cat: 'exterior', name: 'Exterior Cladding Panels',
+    id: 36, cat: 'exterior', name: 'Exterior Cladding Panels',
     sub: 'WPC Exterior Grade, 65mm', price: '₹605', unit: 'Per Sheet',
     badge: 'Popular', badgeType: '',
     img: 'images/Exterior Cladding Panels.jpg'
   },
   {
-    id: 39, cat: 'exterior', name: 'HPL Exterior Sheets',
+    id: 37, cat: 'exterior', name: 'HPL Exterior Sheets',
     sub: 'WPC Exterior Grade, 45mm', price: '₹385', unit: 'Per Sheet',
     badge: '', badgeType: '',
     img: 'images/HPL Exterior Sheets.jpg'
@@ -251,80 +239,80 @@ const allProducts = [
 
   // Modular & Interior
   {
-    id: 40, cat: 'modular', name: 'Modular Kitchen Materials',
+    id: 38, cat: 'modular', name: 'Modular Kitchen Materials',
     sub: 'Base Cabinet, 600mm Width', price: '₹8,500', unit: 'Unit',
     badge: 'Premium', badgeType: 'premium',
     img: 'images/Modular Kitchen Materials.jpg'
   },
   {
-    id: 41, cat: 'modular', name: 'Wardrobe Accessories',
+    id: 39, cat: 'modular', name: 'Wardrobe Accessories',
     sub: 'Sliding, Mirror Finish', price: '₹3,200', unit: 'Pair',
     badge: '', badgeType: '',
     img: 'images/Wardrobe Accessories.jpg'
   },
   {
-    id: 42, cat: 'modular', name: 'TV Unit Materials',
+    id: 40, cat: 'modular', name: 'TV Unit Materials',
     sub: 'Wall Mounted, 6ft Width', price: '₹5,800', unit: 'Unit',
     badge: 'New', badgeType: 'new',
     img: 'images/TV Unit Materials.jpg'
   },
   {
-    id: 43, cat: 'modular', name: 'Office Interior Materials',
+    id: 41, cat: 'modular', name: 'Office Interior Materials',
     sub: 'Wall Mounted, 6ft Width', price: '₹5,800', unit: 'Unit',
     badge: 'New', badgeType: 'new',
     img: 'images/Office Interior Materials.jpg'
   },
   {
-    id: 44, cat: 'modular', name: 'False Ceiling Material',
+    id: 42, cat: 'modular', name: 'False Ceiling Material',
     sub: 'Wall Mounted, 6ft Width', price: '₹5,800', unit: 'Unit',
     badge: 'New', badgeType: 'new',
     img: 'images/False Ceiling Material.jpg'
   },
   {
-    id: 45, cat: 'modular', name: 'Decorative Wall Panels',
+    id: 43, cat: 'modular', name: 'Decorative Wall Panels',
     sub: 'Wall Mounted, 6ft Width', price: '₹5,800', unit: 'Unit',
     badge: 'New', badgeType: 'new',
     img: 'images/Decorative Wall Panels.jpg'
   },
   {
-    id: 46, cat: 'modular', name: 'UPVC Window',
+    id: 44, cat: 'modular', name: 'UPVC Window',
     sub: 'Wall Mounted, 6ft Width', price: '₹5,800', unit: 'Unit',
     badge: 'New', badgeType: 'new',
     img: 'images/UPVC Window.jpg'
   },
   {
-    id: 47, cat: 'modular', name: 'Pooja Unit',
+    id: 45, cat: 'modular', name: 'Pooja Unit',
     sub: 'Wall Mounted, 6ft Width', price: '₹5,800', unit: 'Unit',
     badge: 'New', badgeType: 'new',
     img: 'images/Pooja Unit.jpg'
   },
   // Adhesives & Others
   {
-    id: 48, cat: 'adhesives', name: 'Fevicol & Adhesives',
+    id: 46, cat: 'adhesives', name: 'Fevicol & Adhesives',
     sub: 'Synthetic Resin, 1kg Pack', price: '', unit: '',
     badge: 'Bestseller', badgeType: '',
     img: 'images/Fevicol & Adhesives.jpg'
   },
   {
-    id: 49, cat: 'adhesives', name: 'Edge Band Tapes',
+    id: 47, cat: 'adhesives', name: 'Edge Band Tapes',
     sub: 'Waterproofing Compound, 5kg', price: '', unit: '',
     badge: '', badgeType: '',
     img: 'images/Edge Band Tapes.jpg'
   },
   {
-    id: 50, cat: 'adhesives', name: 'Silicone & Sealants',
+    id: 48, cat: 'adhesives', name: 'Silicone & Sealants',
     sub: 'Silicone Based, White, 280ml', price: '', unit: '',
     badge: '', badgeType: '',
     img: 'images/Silicone & Sealants.jpg'
   },
   {
-    id: 51, cat: 'adhesives', name: 'Cubicle',
+    id: 49, cat: 'adhesives', name: 'Cubicle',
     sub: 'Self Tapping, Stainless Steel, 100 Pcs', price: '', unit: '',
     badge: '', badgeType: '',
     img: 'images/Cubicle.jpg'
   },
   {
-    id: 52, cat: 'adhesives', name: 'Screws & Fasteners',
+    id: 50, cat: 'adhesives', name: 'Screws & Fasteners',
     sub: '22mm Width, 50m Roll, Wood Finish', price: '', unit: '',
     badge: 'New', badgeType: 'new',
     img: 'images/Screws & Fasteners.jpg'
