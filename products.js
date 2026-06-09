@@ -517,6 +517,7 @@ popup.addEventListener("click",(e)=>{
 
 });
 
+<script>
 const hamburger = document.getElementById("hamburger");
 const mobileMenu = document.getElementById("mobileMenu");
 
@@ -532,3 +533,4 @@ document.addEventListener("click", (e) => {
         mobileMenu.classList.remove("active");
     }
 });
+</script>
