@@ -60,6 +60,7 @@ document.addEventListener('keydown', function(e) {
 // ---- Init ----
 updateDots();
 updateArrows();
+
 /* ===========================
    MOBILE MENU
 =========================== */
