@@ -521,32 +521,21 @@ popup.addEventListener("click",(e)=>{
    MOBILE MENU
 =========================== */
 
-document.addEventListener("DOMContentLoaded", function () {
+<script>
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
 
-    const hamburger = document.getElementById("hamburger");
-    const mobileMenu = document.getElementById("mobileMenu");
-
-    if (hamburger && mobileMenu) {
-
-        hamburger.addEventListener("click", function () {
-
-            mobileMenu.classList.toggle("active");
-
-        });
-
-        document.addEventListener("click", function (e) {
-
-            if (
-                !mobileMenu.contains(e.target) &&
-                !hamburger.contains(e.target)
-            ) {
-                mobileMenu.classList.remove("active");
-            }
-
-        });
-
-    }
-
+hamburger.addEventListener("click", function(e){
+    e.stopPropagation();
+    mobileMenu.classList.toggle("show");
 });
-}
+
+document.addEventListener("click", function(){
+    mobileMenu.classList.remove("show");
+});
+
+mobileMenu.addEventListener("click", function(e){
+    e.stopPropagation();
+});
+</script>
 
