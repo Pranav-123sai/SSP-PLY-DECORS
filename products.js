@@ -519,16 +519,30 @@ popup.addEventListener("click",(e)=>{
 
 // Mobile Menu
 
-document.addEventListener("DOMContentLoaded", function () {
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
 
-    alert("JS Loaded");
+if(hamburger && mobileMenu){
 
-    const hamburger = document.getElementById("hamburger");
-    const mobileMenu = document.getElementById("mobileMenu");
+    hamburger.onclick = function(e){
 
-    hamburger.addEventListener("click", function () {
-        alert("Hamburger Clicked");
+        e.stopPropagation();
+
         mobileMenu.classList.toggle("active");
+
+    };
+
+    document.addEventListener("click", function(){
+
+        mobileMenu.classList.remove("active");
+
     });
 
-});
+    mobileMenu.addEventListener("click", function(e){
+
+        e.stopPropagation();
+
+    });
+
+}
+
