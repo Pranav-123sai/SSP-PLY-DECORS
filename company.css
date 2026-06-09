@@ -589,9 +589,9 @@ html, body {
     }
 }
 
-
-
-/* HEADER */
+/* ===========================
+   HEADER
+   =========================== */
 
 .container{
     max-width:1360px;
@@ -748,4 +748,3 @@ html, body {
 .product-card:hover img{
     transform:scale(1.05);
 }
-        
