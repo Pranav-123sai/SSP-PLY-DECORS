@@ -47,7 +47,7 @@ body{
 
 .slide {
     height: auto;
-    min-height: 100vh;
+    min-height: auto;
     scroll-snap-align: start;
     display: flex;
     align-items: center;
@@ -749,4 +749,173 @@ body{
 
 .product-card:hover img{
     transform:scale(1.05);
+}
+
+/* =================================
+   MOBILE FIX - COMPANY PAGE
+================================= */
+@media screen and (max-width:768px){
+
+html,
+body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+/* Header */
+#header{
+    height:80px;
+    padding:0;
+}
+
+.container{
+    width:100%;
+    padding:0 15px;
+}
+
+.header-inner{
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-img{
+    width:55px;
+    height:55px;
+    flex-shrink:0;
+}
+
+.logo-text{
+    display:flex;
+    flex-direction:column;
+}
+
+.logo-text strong{
+    font-size:16px;
+    line-height:1.1;
+    white-space:nowrap;
+}
+
+.logo-text span{
+    font-size:12px;
+}
+
+.hamburger{
+    display:block;
+    border:none;
+    background:none;
+    font-size:32px;
+    cursor:pointer;
+    padding:0;
+}
+
+/* Remove zoom effect */
+.slides-wrapper{
+    height:auto;
+    overflow:visible;
+    margin-top:80px;
+}
+
+.slide{
+    min-height:auto;
+    padding:50px 20px;
+}
+
+/* About Section */
+.about-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+}
+
+.about-left{
+    order:2;
+}
+
+.founder-wrapper{
+    order:1;
+}
+
+.about-left h1{
+    font-size:44px;
+    line-height:1.15;
+}
+
+.about-left p{
+    font-size:16px;
+    line-height:1.8;
+}
+
+.about-btns{
+    flex-direction:column;
+}
+
+.btn-primary,
+.btn-secondary{
+    width:100%;
+    text-align:center;
+}
+
+/* Stats */
+.stats-row{
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.stat{
+    width:45%;
+}
+
+/* Founder */
+.founder-img{
+    width:100%;
+    max-width:300px;
+}
+
+/* Why choose */
+.why-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+}
+
+.why-images{
+    grid-template-columns:1fr;
+}
+
+.why-img-col.offset{
+    margin-top:0;
+}
+
+/* How We Work */
+.steps-grid{
+    grid-template-columns:1fr;
+}
+
+/* CTA */
+.cta-inner{
+    text-align:center;
+}
+
+.cta-btns{
+    flex-direction:column;
+}
+
+.btn-red,
+.btn-dark{
+    width:100%;
+    text-align:center;
+}
+
+/* Hide desktop dots and arrows */
+.slide-nav,
+.arrow{
+    display:none;
+}
+
 }
