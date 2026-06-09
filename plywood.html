@@ -476,6 +476,12 @@ popup.addEventListener("click",(e)=>{
 
 });
 
+    // ─── MOBILE NAV OVERLAY ──────────────────────────────────────
+const mobileNav = document.getElementById('mobileNav');
+document.getElementById('hamburger').addEventListener('click', () => mobileNav.classList.add('open'));
+document.getElementById('mobileClose').addEventListener('click', () => mobileNav.classList.remove('open'));
+mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileNav.classList.remove('open')));
+
 </script>
 </body>
 </html>
